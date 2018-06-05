@@ -1,0 +1,241 @@
+body {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    background: url("../images/what-the-hex.png");
+    line-height: 150%;
+}
+
+header {
+    background: #ffffff;
+    border: 1px solid;
+    border-color: #cccccc;
+}
+
+.header-content-wrapper {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-content-wrapper:after {
+    clear: both;
+    overflow: auto;
+    display: block;
+    content: "";
+}
+
+.name-box {
+    padding: 30px;
+    background: #4aaaa5;
+    width: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.wrapper {
+    background: #ffffff;
+    border: 1px solid;
+    border-color: #dddddd;
+    max-width: 960px;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.line-feature {
+    background: #dddddd;
+    padding: 2px;
+    margin: 20px 0px;
+}
+
+footer {
+    background: #666666;
+    height: 60px;
+}
+
+.green-bar {
+    background: #4aaaa5;
+    height: 5px;
+}
+
+h1,h2,h3 {
+    font-family: "Georgia", Times, Times New Roman, serif;
+}
+
+.info-box-desktop {
+    float: right;
+    padding: 30px 0px;
+}
+
+.info-box-desktop h3 {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.info-box-desktop h3:hover{
+    text-decoration: underline;
+    color: salmon;
+}
+
+.info-box-mobile {
+    display: none;
+    float: right;
+}
+
+.info-box-mobile h3:hover{
+    text-decoration: underline;
+    color: salmon;
+} 
+
+.content-header {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4aaaa5;
+}
+
+.about-me-content p {
+    margin: 20px 0px;
+}
+
+#me-picture {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.first-paragraph:after {
+    clear: both;
+    overflow: auto;
+    display: block;
+    content: "";
+}
+
+.content-inside {
+    min-height: calc(100vh - 160px);
+}
+
+.content {
+    padding: 30px;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    padding: 20px 10px 20px 10px;
+    position: relative;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .text-block {
+      position: absolute;
+      bottom: 25px;
+      padding: 20px 0px;
+      background: #4aaaa5;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+  }
+
+  input {
+      width: 100%;
+      height: 1.5em;
+      margin: 5px 0px;
+  }
+
+  button {
+    padding: 10px 30px;
+    margin: 15px 0px 0px 0px;
+    background: #4aaaa5;
+    color: #ffffff;;
+  }
+
+  .column img {
+      width: 100%;
+  }
+
+  a,span {
+      display: inline-block;
+  }
+
+  .column h2:hover {
+      text-decoration: underline;
+  }
+
+  button:hover {
+    background: #ffffff;
+    color: #4aaaa5;
+    border: 2px solid;
+    border-color: #666666;
+  }
+
+.column-content-wrapper {
+    position: relative;
+}
+
+.info-box-mobile-ham-icon img {
+    height: 50px;
+    margin-top: 17px;
+}
+
+@media (max-width: 980px) {
+    .column {
+        width: 30%;
+        padding: 20px 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        width: 46%;
+        padding: 20px 10px;
+    }
+
+    .info-box-desktop {
+        display: none;
+    }
+
+    .info-box-mobile-dropdown {
+        position: absolute;
+        background: #4aaaa5;
+        padding: 5px;
+        right: 10px;
+        transition: all 0.5s;
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+    }
+
+    .info-box-mobile-dropdown a {
+        padding: 5px;
+        color: #ffffff;
+        text-decoration: none;
+    }    
+
+    .info-box-mobile {
+        display: block;
+        position: relative;
+    }
+}
+
+@media (max-width: 640px) {
+    .column {
+        width: 95%;
+    }
+
+    header {
+        position: static;
+    }
+}
+
+textarea {
+    height: 200px; 
+    width: 100%;
+}
