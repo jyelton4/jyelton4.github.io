@@ -1,74 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/ham-menu.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Oswald|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <style>
+    
+        #intro-tagline,#mission-stmt { margin-top: 25px; }
+        h1 { font-size: 3.5rem; line-height: 110%; margin: 0; font-family: "Playfair Display"; }
+        h2 { font-size: 2rem; line-height: 110%; margin: 0; font-family: "Playfair Display"; }
+        h6 { font-family: "Oswald"; font-size: 1.5rem; text-decoration: underline; }
+        p { font-family: "Playfair Display"; font-size: 1.15rem; }
+        #logo img { width: 100%;  margin-top: 50px;  }
+        #nav-items a { font-size: 1.25rem; font-family: "Oswald"; }
+        header { margin-bottom: 200px; }
+        .project-box { margin: 100px 0px; }
+        .project-desc { width: 50%;  padding: 20px;}
+        .project-img { width: 50%; border: 0.15rem solid black; padding: 10px; }
+        .section { padding: 100px 0px; }
+        #form-wrapper { text-align: center; width: 75% }
+        .contact-btns { margin: 40px; }
+        .btn-large { margin: 10px; }
+        #message-msg { border: 0.1rem solid black; }
+        .chip { margin-bottom: 20px; }
+
+    </style>
 </head>
 <body>
-    <!-- Nav bar -->
-    <header>
-        <div class="header-content-wrapper">
-            <div class="name-box">
-                <h1>Jay Yelton</h1>
+
+    <div id="site" class="container">
+        <div id="nav-bar">
+            <div class="wrapper white">
+                <ul id="nav-items" class="center hide-on-med-and-down row">
+                    <li><a href="#" class="left black-text col s2">Jacob Yelton</a></li>
+                    <li><a href="#contact-section" class="right black-text col s1"><span>|&nbsp;&nbsp;&nbsp;&nbsp;</span>Contact</a></li>
+                    <li><a href="#porfolio-section" class="right black-text col s1">Portfolio</a></li>
+                    <li><a href="#about-section" class="right black-text col s1">About<span>&nbsp;&nbsp;&nbsp;|</span></a></li>
+                </ul>
             </div>
-            <div class="info-box-desktop">
-                <a href="index.html">
-                    <h3>About</h3><span>&nbsp;|</span>
-                </a>
-                <a href="portfolio.html">
-                    <h3>Portfolio</h3><span>&nbsp;|</span>
-                </a>
-                <a href="contact.html">
-                    <h3>Contact</h3>
-                </a>
+        </div>
+        <div id="logo">
+            <img src="./assets/images/teton_art.png" alt="#">
+        </div>
+        <header class="intro-section center">
+            <h1 id="greeting">JACOB YELTON</h1>
+            <h2 id="intro-tagline">&mdash;SOFTWARE ENGINEER&mdash;</h2>
+        </header>
+        <div id="about-section" class="row section">
+            <h4 class=" section-header center">ABOUT</h4>
+            <div class="col s10">
+                <h2 id="intro-tagline">I'm Jacob Yelton, a full-stack software engineer and mountain enthusiast. The thirst for freedom defines my person and informs my perspectives on design.</h2>
+                <h2 id="intro-tagline">I arrived in the software world by way of geographic information science and data analytics. My previous background includes GIS/geospatial research, ArcPy scripting, relational database management + administration, software support/UAT, and scientific field data collection.</h2>
+                <h2 id="intro-tagline">I am now firmly planted in the world of software + web application development. I will graduate from the University of Denver Full-Stack Web Development in November 2018.</h2>
+                <h2 id="intro-tagline">Whenever possible, I can be found climbing mountains, rock, snow, and trails. Sweating for the next objective, always and forever.</h2>
             </div>
-            <div class="info-box-mobile">
-                <div class="info-box-mobile-ham-icon" id="info-box-mobile-ham-icon">
-                    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/345384-200.png">
+        </div>
+        <div id="porfolio-section" class="section">
+            <h4 class="section-header center">PORTFOLIO</h4>
+            <div class="project-box row">
+                <div class="project-desc left">
+                    <h6>Crag</h6>
+                    <p>A mobile-responsive app that crafts a point-of-entry to the great sport of rock climbing. A simple yet elegant button-based form UI creates a user's profile and directs their experience to suitable areas, routes, gyms, meetups, et cetera.</p>
                 </div>
-                <div class="info-box-mobile-dropdown" id="info-box-mobile-dropdown">
-                    <a href="index.html">
-                        <h3>About</h3>
-                    </a>
-                    <a href="portfolio.html">
-                        <h3>Portfolio</h3>
-                    </a>
-                    <a href="contact.html">
-                        <h3>Contact</h3>
-                    </a>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/crag-scrnsht.png" alt="crag-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc right">
+                    <h6>Raptastic GIF Generator</h6>
+                    <p>Rapper GIFs are some of the funniest around. A simple UI generates GIFs of your favorite rappers at the click of a button. Add new buttons, play, or pause GIFs.</p>
+                </div>
+                <div class="project-img left valign-wrapper">
+                    <img src="./assets/images/giftastic-app-scrnsht.png" alt="crag-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc left">
+                    <h6>Star Wars RPG</h6>
+                    <p>Battle it out with your favorite Star Wars characters in an RPG-style game with dynamically-generated attack/defense profiles.</p>
+                </div>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/star-wars-rpg-scrnsht.png" alt="crag-scrnsht" class="responsive-img">
                 </div>
             </div>
         </div>
-    </header>
-    <!-- End Nav bar -->
-    <!-- Begin Content -->
-    <div class="content-inside">
-        <div class="wrapper">
-            <div class="content">
-                <div class="content-header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="line-feature"></div>
-                <div class="about-me-content">
-                    <img id="me-picture" src="http://via.placeholder.com/200x150" alt="placeholder">
-                    <p class="first-paragraph">The fact that so many people are surprised to hear that anger in some of Reverend Wright's sermons simply reminds us of the old truism that the most segregated hour in American life occurs on Sunday morning. Reverend Wright's sermons on every channel, every day and talk about them from now until the election, and make the only question in this campaign whether or not the American people think that I somehow believe or sympathize with his most offensive words.</p>
-                    <p>She sought out allies in her fight against injustice. Now is the time to finally keep the promise of affordable, accessible health care for every single American. The Holy Koran tells us, "O mankind! We have created you male and a female; and we have made you into nations and tribes so that you may know one another."</p>
-                    <p>Most working- and middle-class white Americans don't feel that they have been particularly privileged by their race. As a boy, I spent several years in Indonesia and heard the call of the azaan at the break of dawn and the fall of dusk. I have made it clear to the Iraqi people that we pursue no bases, and no claim on their territory or resources.</p>
-                </div>
+        <div id="contact-section" class="section">
+            <h4 class="section-header center">CONTACT</h4>
+            <div class="contact-btns center">
+                <a id="github-btn" class="waves-effect waves-light btn-large grey darken-3" href="https://github.com/jyelton4" target="_blank">
+                <i class="fab fa-github-square"></i> GITHUB</a>
+
+                <a id="linkedin-btn" class="waves-effect waves-light btn-large grey darken-3" href="https://www.linkedin.com/in/jacobyelton/" target="_blank">
+                <i class="fab fa-linkedin"></i>LINKEDIN</a>
+
+                <a id="email-btn" class="waves-effect waves-light btn-large grey darken-3" href="mailto:jyelton2040@gmail.com">
+                <i class="fa fa-envelope"></i>EMAIL</a>
+            </div>
+            <div class="row" id="form-wrapper">
+                <form class="col s12">
+                    <div class="chip">Or be a weirdo and leave a message below...thanks!</div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="message" type="text" class="validate">
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a id="submit-msg-btn" class="waves-effect waves-light btn-large grey darken-3" href="#">SUBMIT</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="green-bar"></div>
-    </footer>
 
-    <script type="text/javascript" src="portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
 </body>
 </html>
