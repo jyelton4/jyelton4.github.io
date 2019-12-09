@@ -1,248 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jacob Yelton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Oswald|Shrikhand" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/stylesheets/main.css" />
+    <script src="main.js"></script>
+    <style>
+    
+        #intro-tagline,#mission-stmt { margin-top: 25px; }
+        h1 { font-size: 3.5rem; line-height: 110%; margin: 0; font-family: "Playfair Display"; }
+        h2 { font-size: 2rem; line-height: 110%; margin: 0; font-family: "Playfair Display"; }
+        h6 { font-family: "Oswald"; font-size: 1.5rem; text-decoration: underline; }
+        p { font-family: "Playfair Display"; font-size: 1.15rem; }
+        #logo img { width: 100%;  margin-top: 50px;  }
+        #nav-items a { font-size: 1.25rem; font-family: "Oswald"; }
+        header { margin-bottom: 200px; }
+        .project-box { margin: 100px 0px; }
+        .project-desc { width: 50%;  padding: 20px;}
+        .project-img { width: 50%; border: 0.15rem solid black; padding: 10px; }
+        .section { padding: 100px 0px; }
+        #form-wrapper { text-align: center; width: 75% }
+        .contact-btns { margin: 40px; }
+        .btn-large { margin: 10px; }
+        #message-msg { border: 0.1rem solid black; }
+        .chip { margin-bottom: 20px; }
+
+    </style>
 </head>
 <body>
 
-    <!-- Container -->
-    <div style="background-color: rgba(252,255,249);">
-
-        <!-- Social media sidebar -->
-        <div style="position: fixed; bottom: 0px; left: 40px;">
-            <ul id="social-list" style="list-style: none; display: flex; flex-direction: column; margin: 0; padding: 0;">
-                <li>
-                    <a id="github-btn" href="https://github.com/jyelton4" target="_blank">
-                    <i class="fab fa-github-square"></i></a>
-                </li>
-                <li>
-                    <a id="linkedin-btn" href="https://www.linkedin.com/in/jacobyelton/" target="_blank">
-                    <i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a id="instagram-btn" href="https://www.instagram.com/shark_wallace/" target="_blank">
-                    <i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Email sidebar -->
-        <div style="position: fixed; bottom: 0px; right: 40px;">
-            <div id="email">
-                <a href="#contact-section" style="text-decoration: none; writing-mode: vertical-rl; margin: auto; padding: 10px;">jyelton2040@gmail.com</a>
+    <div id="site" class="container">
+        <div id="nav-bar">
+            <div class="wrapper white">
+                <ul id="nav-items" class="center hide-on-med-and-down row">
+                    <li><a href="#" class="left black-text col s2">Jacob Yelton</a></li>
+                    <li><a href="#contact-section" class="right black-text col s1"><span>|&nbsp;&nbsp;&nbsp;&nbsp;</span>Contact</a></li>
+                    <li><a href="#porfolio-section" class="right black-text col s1">Portfolio</a></li>
+                    <li><a href="#about-section" class="right black-text col s1">About<span>&nbsp;&nbsp;&nbsp;|</span></a></li>
+                </ul>
             </div>
         </div>
-
-        <!-- Nav -->
-        <div id="nav-bar" style="display: flex; justify-content: space-between; padding: 10px 40px;">
-            <a href="#">JY</a>
-            <div style="justify-content: space-between;">
-                <a href="#about-section">About<span>&nbsp;/</span></a>
-                <a href="#porfolio-section">Portfolio<span>&nbsp;/</span></a>
-                <a href="#contact-section">Contact</a>
+        <div id="logo">
+            <img src="./assets/images/teton_art.png" alt="#">
+        </div>
+        <header class="intro-section center">
+            <h1 id="greeting">JACOB YELTON</h1>
+            <h2 id="intro-tagline">&mdash;SOFTWARE ENGINEER&mdash;</h2>
+        </header>
+        <div id="about-section" class="row section">
+            <h4 class=" section-header center">ABOUT</h4>
+            <div class="col s10">
+                <h2 id="intro-tagline">I'm Jacob Yelton, a full-stack software engineer and mountain enthusiast. The thirst for freedom defines my person and informs my perspectives on design.</h2>
+                <h2 id="intro-tagline">I arrived in the software world by way of geographic information science and data analytics. My previous background includes GIS/geospatial research, ArcPy scripting, relational database management + administration, software support/UAT, and scientific field data collection.</h2>
+                <h2 id="intro-tagline">I am now firmly planted in the world of software + web application development. I will graduate from the University of Denver Full-Stack Web Development in November 2018.</h2>
+                <h2 id="intro-tagline">Whenever possible, I can be found climbing mountains, rock, snow, and trails. Sweating for the next objective, always and forever.</h2>
             </div>
         </div>
-
-        <!-- Main wrapper -->
-        <div style="width: 70%; margin: 0 auto;">
-            
-            <!-- Logo -->
-            <div style="text-align: center; margin: 50px 0 15px 0;">
-                <img src="./assets/img/teton_art.png" alt="#" style="width: auto; max-height: 100%;">
-            </div>
-
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 100px">
-                <h1 style="margin-bottom: 10px;">JACOB YELTON</h1>
-                <h2>FULL-STACK ENGINEER / GIS DEVELOPER</h2>
-            </div>
-
-            <!-- About -->
-            <div id="about-section" style="text-align: left; padding: 25px; margin-bottom: 100px;">
-                <h4>ABOUT</h4>
-                <p>I'm Jacob Yelton, a full-stack software engineer and mountain enthusiast. 
-                    The thirst for freedom defines my person and informs my perspectives on design. 
-                    I arrived in the software world by way of geographic information science and data analytics. 
-                    My previous background includes GIS/geospatial research, ArcPy scripting, relational database management + administration, 
-                    software support/UAT, and scientific field data collection. 
-                    I am now firmly planted in the world of software + web application development. 
-                    I will graduate from the University of Denver Full-Stack Web Development in November 2018. Whenever possible, 
-                    I can be found climbing mountains, rock, snow, and trails. Sweating for the next objective, always and forever.
-                </p>
-            </div>
-
-            <!-- Experience -->
-
-            <!-- Work -->
-                <!-- Featured Projects -->
-            <div id="porfolio-section" style="padding: 25px; margin-bottom: 100px">
-                <h4>PROJECTS</h4>
-
-                <div style="position: relative; margin: 0 15px 25px 15px">
-                    <div style="position: absolute; display: block; width: 45%; border: 1px solid darkgray; top: 75px; background-color: rgba(245,245,245,0.85); padding: 15px;">
-                        <p style="font-size: 16px;">A mobile-responsive app that helps Denverites find their next favorite neighborhood. Users rank the attributes that deliver the greatest quality of life, a geospatial engine searches for the highest concentration of those attributes, and returns suggested neighborhoods.</p>
-                    </div>
-                    <div class="project-box" style="display: flex; justify-content: space-between;">
-                        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <h4 style="margin: 0">Featured Project</h4>
-                                <h6 style="margin: 0">Locality</h6>
-                            </div>
-                            <div>
-                                <p>Node.js / Vue.js / Turf.js</p>
-                                <a href="https://github.com/jyelton4/locality-app-prd"><i class="fab fa-github"></i></a>
-                                <a href="https://locality-app.herokuapp.com"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <img style="border: 1px solid dimgray;" src="./assets/img/locality-screenshot.png" alt="#">
-                    </div>
+        <div id="porfolio-section" class="section">
+            <h4 class="section-header center">PORTFOLIO</h4>
+            <div class="project-box row">
+                <div class="project-desc left">
+                    <h6>Locality</h6>
+                    <p>A mobile-responsive app that helps Denverites find their next favorite neighborhood. Users rank the attributes that deliver the greatest quality of life, a geospatial engine searches for the highest concentration of those attributes, and returns suggested neighborhoods.</p>
+                    <a href="https://locality-app.herokuapp.com">Heroku Deployed App</a>
+                        <br>
+                    <a href="https://locality-app.herokuapp.com">Code</a>
                 </div>
-
-                <div style="position: relative; margin: 80px 15px 25px 15px;">
-                    <div style="right: 0; text-align: right; position: absolute; display: block; width: 45%; border: 1px solid darkgray; background-color: rgba(245,245,245,0.85); top: 75px; padding: 15px;">
-                        <p style="font-size: 16px;">A mobile-responsive app that crafts a point-of-entry to the great sport of rock climbing. A simple yet elegant button-based form UI creates a user's profile and directs their experience to suitable areas, routes, gyms, meetups, et cetera.</p>
-                    </div>
-                    <div class="project-box" style="display: flex; justify-content: space-between;">
-                        <img src="./assets/img/crag-screenshot.png" alt="#">
-                        <div class="" style="display: flex; flex-direction: column; justify-content: space-between; text-align: right;">
-                            <div>
-                                <h4 style="margin: 0">Featured Project</h4>
-                                <h6 style="margin: 0">Crag</h6>
-                            </div>
-                            <div>
-                                <p>Google Maps API / Firebase / Materialize</p>
-                                <a href="https://github.com/jyelton4/crag-app"><i class="fab fa-github"></i></a>
-                                <a href="https://jyelton4.github.io/crag-app/"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <!-- Other Projects -->
-                <div>
-                    <div style="display: flex; justify-content: space-between; margin: 80px 5px 20px 5px;">
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div>
-                                    <i class="far fa-folder-open"></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/jyelton4/friend-finder-app"><i class="fab fa-github"></i></a>
-                                    <a href="https://fathomless-beach-88767.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <h6 style="margin: 0">Friend Finder</h6>
-                            <p>Answer 10 survey questions and match with other respondents! A Node.js-MySQL database integration powers a record linkage algorithm to evaluate answers and finds the nearest match.</p>
-                            <p>Node.js / MySQL / Materialize</p>
-                        </div>
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <i class="far fa-folder-open"></i>
-                                <a href="https://github.com/jyelton4/bamazon-mysql"><i class="fab fa-github"></i></a>
-                            </div>
-                            <h6 style="margin: 0">Bamazon</h6>    
-                            <p>Mock CLI program that enables various database operations for customers, managers, and supervisors of "Bamazon."</p>
-                            <p>Node.js / MySQL</p>
-                        </div>
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div>
-                                    <i class="far fa-folder-open"></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/jyelton4/GifTastic-app"><i class="fab fa-github"></i></a>
-                                    <a href="https://jyelton4.github.io/GifTastic-app/"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <h6 style="margin: 0">Raptastic GIF Generator</h6>
-                            <p>Rapper GIFs are some of the funniest around. A simple UI generates GIFs of your favorite rappers at the click of a button. Add new buttons, play, or pause GIFs.</p>
-                            <p>JS / jQuery / Bootstrap</p>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin: 0px 5px 20px 5px;">
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div>
-                                    <i class="far fa-folder-open"></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/jyelton4/star-wars-rpg"><i class="fab fa-github"></i></a>
-                                    <a href="https://jyelton4.github.io/star-wars-rpg/"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <h6 style="margin: 0">Star Wars RPG</h6>
-                            <p>Battle it out with your favorite Star Wars characters in an RPG-style game with dynamically-generated attack/defense profiles.</p>
-                            <p>JS / jQuery / Bootstrap</p>
-                        </div>
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div>
-                                    <i class="far fa-folder-open"></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/jyelton4/star-wars-rpg"><i class="fab fa-github"></i></a>
-                                    <a href="https://jyelton4.github.io/star-wars-rpg/"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <h6 style="margin: 0"></h6>
-                            <p></p>
-                            <p></p>
-                        </div>
-                        <div style="border: 1px solid black; background-color: rgba(245,245,245,0.85); width: 30%; height: 300px; margin: 0 10px; padding: 15px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <div>
-                                    <i class="far fa-folder-open"></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/jyelton4/star-wars-rpg"><i class="fab fa-github"></i></a>
-                                    <a href="https://jyelton4.github.io/star-wars-rpg/"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <h6 style="margin: 0"></h6>
-                            <p></p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Contact -->
-            <div id="contact-section" style="padding: 25px; margin-bottom: 100px;">
-                <h4>CONTACT</h4>
-                <div>
-                    <form id="contact-form" onsubmit="this.reset()">
-                        <div>
-                            <label for="name">Name:</label>
-                            <input id="name">
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input id="email">
-                        </div>
-                        <div>
-                            <label for="message">Message:</label>
-                            <textarea id="message"></textarea>
-                        </div>
-                        <div>
-                            <button class="button" type="submit">Send your message</button>
-                        </div>
-                    </form>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/locality.gif" alt="crag-scrnsht" class="responsive-img">
                 </div>
             </div>
-
+            <div class="project-box row">
+                <div class="project-desc right">
+                    <h6>Crag</h6>
+                    <p>A mobile-responsive app that crafts a point-of-entry to the great sport of rock climbing. A simple yet elegant button-based form UI creates a user's profile and directs their experience to suitable areas, routes, gyms, meetups, et cetera.</p>
+                    <a href="https://jyelton4.github.io/crag-app/">Site</a>
+                        <br>
+                    <a href="https://github.com/jyelton4/locality-app-prd">Code</a>
+                </div>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/crag-scrnsht.png" alt="crag-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc left">
+                    <h6>Friend Finder</h6>
+                    <p>Answer 10 survey questions and match with other respondents! A Node.js-MySQL database integration powers a record linkage algorithm to evaluate answers and finds the nearest match.</p>
+                    <a href="https://fathomless-beach-88767.herokuapp.com/">Heroku Deployed App</a>
+                        <br>
+                    <a href="https://github.com/jyelton4/friend-finder-app">Code</a>
+                </div>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/friend-finder-scrnsht.png" alt="ff-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc right">
+                    <h6>Bamazon</h6>
+                    <p>Mock CLI program that enables various database operations for customers, managers, and supervisors of "Bamazon"</p>
+                    <a href="https://github.com/jyelton4/bamazon-mysql">Code</a>
+                </div>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/bamazon-scrnsht.png" alt="bamazon-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc left">
+                    <h6>Raptastic GIF Generator</h6>
+                    <p>Rapper GIFs are some of the funniest around. A simple UI generates GIFs of your favorite rappers at the click of a button. Add new buttons, play, or pause GIFs.</p>
+                    <a href="https://jyelton4.github.io/GifTastic-app/">Site</a>
+                        <br>
+                    <a href="https://github.com/jyelton4/GifTastic-app">Code</a>
+                </div>
+                <div class="project-img left valign-wrapper">
+                    <img src="./assets/images/giftastic-app-scrnsht.png" alt="gif-gen-scrnsht" class="responsive-img">
+                </div>
+            </div>
+            <div class="project-box row">
+                <div class="project-desc right">
+                    <h6>Star Wars RPG</h6>
+                    <p>Battle it out with your favorite Star Wars characters in an RPG-style game with dynamically-generated attack/defense profiles.</p>
+                    <a href="https://jyelton4.github.io/star-wars-rpg/">Site</a>
+                        <br>
+                    <a href="https://github.com/jyelton4/star-wars-rpg">Code</a>
+                </div>
+                <div class="project-img right valign-wrapper">
+                    <img src="./assets/images/star-wars-rpg-scrnsht.png" alt="rpg-scrnsht" class="responsive-img">
+                </div>
+            </div>
         </div>
-    
+        <div id="contact-section" class="section">
+            <h4 class="section-header center">CONTACT</h4>
+            <div class="contact-btns center">
+                <a id="github-btn" class="waves-effect waves-light btn-large grey darken-3" href="https://github.com/jyelton4" target="_blank">
+                <i class="fab fa-github-square"></i> GITHUB</a>
+
+                <a id="linkedin-btn" class="waves-effect waves-light btn-large grey darken-3" href="https://www.linkedin.com/in/jacobyelton/" target="_blank">
+                <i class="fab fa-linkedin"></i>LINKEDIN</a>
+
+                <a id="email-btn" class="waves-effect waves-light btn-large grey darken-3" href="mailto:jyelton2040@gmail.com">
+                <i class="fa fa-envelope"></i>EMAIL</a>
+            </div>
+            <div class="row" id="form-wrapper">
+                <form class="col s12">
+                    <div class="chip">Or be a weirdo and leave a message below...thanks!</div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="message" type="text" class="validate">
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a id="submit-msg-btn" class="waves-effect waves-light btn-large grey darken-3" href="#">SUBMIT</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
 </body>
 </html>
